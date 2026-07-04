@@ -11,7 +11,7 @@
 ```
 base_url: https://compute.virtuals.io/v1
 api_key:  <from EconomyOS Compute dashboard>
-model:    claude-opus-4-7-fast  (or listed models)
+model:    x-ai-grok-4-3  (Spark catalogue — Grok 4 only since 2026-07-04)
 ```
 
 ## ACP CLI
