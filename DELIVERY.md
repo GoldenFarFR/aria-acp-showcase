@@ -9,7 +9,7 @@
 | Agent ACP live | ✅ | [app.virtuals.io/acp/agents](https://app.virtuals.io/acp/agents) — `019f0522-b57b-7e8e-a70a-aab2070e070e` |
 | Offres USDC | ✅ | `analyse_lite_x1`, `analyse_full_x1`, `aria_full_access` |
 | Compute Spark | ✅ | `compute.virtuals.io/v1` — voir [docs/economyos-setup.md](docs/economyos-setup.md) |
-| Package Showcase PR | 🚧 | [GoldenFarFR/acp-cli-demos](https://github.com/GoldenFarFR/acp-cli-demos/tree/showcase/aria-vanguard-zhc) → `Virtual-Protocol/acp-cli-demos` |
+| Package Showcase PR | ✅ ouverte | [Virtual-Protocol/acp-cli-demos#37](https://github.com/Virtual-Protocol/acp-cli-demos/pull/37) |
 | Carte publique Showcase | ⏳ | Après merge PR + sync docs |
 
 ## PR cible
