@@ -25,9 +25,16 @@ showcase/aria-vanguard-zhc/
 
 ## Prochaines preuves (post-merge)
 
-1. Vidéo X courte : fund job → deliverable JSON → escrow release
-2. Health API stable (`api.ariavanguardzhc.com/api/health`)
-3. 3+ jobs ACP payants documentés (receipts redacted)
+1. **Vidéo X** — script : [`docs/x-demo-analyse-lite.md`](docs/x-demo-analyse-lite.md)
+2. **Job escrow** — `scripts/smoke-analyse-lite.ps1` (wallet acheteur ≠ provider + USDC Base)
+3. Health API — OK (~0,35 s au re-test 2026-07-04)
+4. Receipt local moteur : [`examples/analyse_lite/job-receipt-local-smoke.md`](examples/analyse_lite/job-receipt-local-smoke.md)
+
+### Bloqueurs job test (2026-07-04)
+
+- API Virtuals : `create-job` / `job list` → `Server error 500 (viem@2.53.1)`
+- Un seul agent CLI (`Aria Vanguard ZHC`) — ACP interdit auto-achat même wallet
+- Wallet Base : 0 USDC visible — topup acheteur requis (~2 USDC)
 
 ## Repos centrés livraison
 
