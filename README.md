@@ -1,74 +1,59 @@
-# Aria Vanguard ZHC — ACP Showcase
+# Aria Vanguard ZHC — Spark Delivery Showcase
 
 [![EconomyOS](https://img.shields.io/badge/EconomyOS-Virtual%20Protocol-00d4aa)](https://os.virtuals.io/)
 [![ACP](https://img.shields.io/badge/ACP-Agent%20Commerce-blue)](https://app.virtuals.io/acp/agents)
+[![Spark](https://img.shields.io/badge/Spark-$200%2Fwk-ff6b35)](https://os.virtuals.io/community#credits)
 [![Base](https://img.shields.io/badge/Chain-Base-0052FF)](https://base.org/)
 [![Site](https://img.shields.io/badge/Site-ariavanguardzhc.com-purple)](https://ariavanguardzhc.com)
 
-Autonomous AI agent on [Virtual Protocol EconomyOS](https://os.virtuals.io/) — live ACP provider on Base.
+**Live ACP provider on Base** — proving Virtuals Spark credits convert into shipped agent commerce.
 
-> **Builder entry point** for DevRel / discretionary credits review. Full product code: [GoldenFarFR/ARIA](https://github.com/GoldenFarFR/ARIA).
+> Full code: [`GoldenFarFR/ARIA`](https://github.com/GoldenFarFR/ARIA) · Delivery tracker: [`DELIVERY.md`](DELIVERY.md)
 
-## Live agent
+## Hire now
 
 | Field | Value |
 |-------|--------|
-| Name | Aria Vanguard ZHC |
-| Agent ID | `019f0522-b57b-7e8e-a70a-aab2070e070e` |
-| Hire | [app.virtuals.io/acp/agents](https://app.virtuals.io/acp/agents) |
-| Site | [ariavanguardzhc.com](https://ariavanguardzhc.com) |
-| API | [api.ariavanguardzhc.com/api/health](https://api.ariavanguardzhc.com/api/health) |
-| X | [@Aria_ZHC](https://x.com/Aria_ZHC) |
-
-## ACP services (production)
-
-| Service | Price | SLA | Deliverable |
-|---------|-------|-----|-------------|
-| `analyse_lite_x1` | 1.99 USDC | 5 min | SAFE / CAUTION / DANGER scan (Base) |
-| `analyse_full_x1` | 4.99 USDC | 5 min | Deeper on-chain analysis |
-| `aria_full_access` | 19.99 USDC / 30d | — | Subscription bundle |
-
-Research-grade output only — not financial advice.
-
-## Architecture
-
-```
-Client (Virtuals ACP) → job.funded
-       ↓
-aria-core ACP provider (poll / listener)
-       ↓
-Deliverable JSON + escrow release
-       ↓
-Site + API (vanguard/) — ariavanguardzhc.com
-```
-
-## Code map (ARIA repo)
-
-| Module | Path |
-|--------|------|
-| ACP CLI wrapper | [`acp_cli.py`](https://github.com/GoldenFarFR/ARIA/blob/main/packages/aria-core/src/aria_core/skills/acp_cli.py) |
-| Provider skill | [`acp_provider_skill.py`](https://github.com/GoldenFarFR/ARIA/blob/main/packages/aria-core/src/aria_core/skills/acp_provider_skill.py) |
-| Offerings config | [`acp_offerings.yaml`](https://github.com/GoldenFarFR/ARIA/blob/main/packages/aria-core/src/aria_core/knowledge/acp_offerings.yaml) |
-| Marketplace intel | [`acp_market_intelligence.py`](https://github.com/GoldenFarFR/ARIA/blob/main/packages/aria-core/src/aria_core/skills/acp_market_intelligence.py) |
-| Vanguard API | [`vanguard/backend/`](https://github.com/GoldenFarFR/ARIA/tree/main/vanguard/backend) |
-
-## Quick start (builders)
+| Agent | **Aria Vanguard ZHC** |
+| ID | `019f0522-b57b-7e8e-a70a-aab2070e070e` |
+| Marketplace | [app.virtuals.io/acp/agents](https://app.virtuals.io/acp/agents) |
+| Wallet (Base) | `0xd752a325433f4d55c5e0b125be84845d7de47bb3` |
 
 ```bash
 npm i -g @virtuals-protocol/acp-cli
-acp status   # with agent wallet configured
+acp configure
+acp browse "Aria Vanguard"
 ```
 
-Inference via EconomyOS: `https://compute.virtuals.io/v1` — see [docs/economyos-setup.md](docs/economyos-setup.md).
+## Services (production)
+
+| Offering | Price | Deliverable |
+|----------|-------|-------------|
+| `analyse_lite_x1` | 1.99 USDC | `liteVerdict` SAFE / CAUTION / DANGER |
+| `analyse_full_x1` | 4.99 USDC | Score + markdown audit |
+| `aria_full_access` | 19.99 USDC / 30d | Subscription bundle |
+
+Research-grade only — not financial advice.
+
+## Proof surfaces
+
+| Proof | URL |
+|-------|-----|
+| Site | https://ariavanguardzhc.com |
+| API health | https://api.ariavanguardzhc.com/api/health |
+| X | [@Aria_ZHC](https://x.com/Aria_ZHC) |
+| Showcase PR | [acp-cli-demos/showcase/aria-vanguard-zhc](https://github.com/GoldenFarFR/acp-cli-demos/tree/showcase/aria-vanguard-zhc) |
 
 ## Example job
 
-[`examples/analyse_lite/README.md`](examples/analyse_lite/README.md) — requirements → deliverable JSON shape.
+[`examples/analyse_lite/README.md`](examples/analyse_lite/README.md)
+
+## Architecture
+
+[`docs/architecture.md`](docs/architecture.md) · Spark setup: [`docs/economyos-setup.md`](docs/economyos-setup.md)
 
 ## Security
 
-Operator secrets and deploy scripts live in **private** repo `aria-ops` (not public). Product repos contain no production `.env`.
+Secrets and deploy scripts live in private `aria-ops` — never in public repos.
 
-## License
-
-MIT — examples only. Agent brand © GoldenFar.
+MIT — showcase only. © GoldenFar.
