@@ -42,7 +42,7 @@ Research-grade only — not financial advice.
 | Site | https://ariavanguardzhc.com |
 | API health | https://api.ariavanguardzhc.com/api/health |
 | X | [@Aria_ZHC](https://x.com/Aria_ZHC) |
-| Showcase PR | [acp-cli-demos/showcase/aria-vanguard-zhc](https://github.com/GoldenFarFR/acp-cli-demos/tree/showcase/aria-vanguard-zhc) |
+| Showcase PR | [Virtual-Protocol/acp-cli-demos#37](https://github.com/Virtual-Protocol/acp-cli-demos/pull/37) — **fermée sans merge (10/07/2026)**, ACP déprioritisé ; package archivé sur [branche fork](https://github.com/GoldenFarFR/acp-cli-demos/tree/showcase/aria-vanguard-zhc) |
 
 ## Example job
 
