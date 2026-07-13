@@ -6,6 +6,11 @@
 [![Base](https://img.shields.io/badge/Chain-Base-0052FF)](https://base.org/)
 [![Site](https://img.shields.io/badge/Site-ariavanguardzhc.com-purple)](https://ariavanguardzhc.com)
 
+> **Archivé (13/07/2026)** : la stratégie de commerce ACP (marketplace Virtuals)
+> a été déprioritisée (10/07/2026) — voir la ligne "Showcase PR" plus bas. ARIA
+> continue de tourner (site + Telegram), financée en partie par les crédits
+> Spark, mais ce repo n'est plus une surface active. Conservé pour preuve/historique.
+
 **Live ACP provider on Base** — proving Virtuals Spark credits convert into shipped agent commerce.
 
 > Full code: [`GoldenFarFR/ARIA`](https://github.com/GoldenFarFR/ARIA) · Delivery tracker: [`DELIVERY.md`](DELIVERY.md)
